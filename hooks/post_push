@@ -1,0 +1,6 @@
+#!/bin/bash
+tag=go1.17.3
+tagStart=$(expr index "$IMAGE_NAME" :)
+repoName=${IMAGE_NAME:0:tagStart-1}
+docker tag $IMAGE_NAME ${repoName}:${tag}
+docker push ${repoName}:${tag}
