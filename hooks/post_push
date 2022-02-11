@@ -1,5 +1,5 @@
 #!/bin/bash
-tag=amd64-go1.17.6
+tag=amd64-go1.17.7
 tagStart=$(expr index "$IMAGE_NAME" :)
 repoName=${IMAGE_NAME:0:tagStart-1}
 docker tag $IMAGE_NAME ${repoName}:${tag}
