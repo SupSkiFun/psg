@@ -1,5 +1,5 @@
 #!/bin/bash
-tag=1.6.0
+tag=1.7.0
 tagStart=$(expr index "$IMAGE_NAME" :)
 repoName=${IMAGE_NAME:0:tagStart-1}
 docker tag $IMAGE_NAME ${repoName}:${tag}
